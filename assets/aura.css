@@ -1,0 +1,141 @@
+/*
+ * Aura Theme for Glance
+ * Palette from the Aura Chrome theme (daltonmenezes/aura-theme, packages/chrome):
+ *   frame            #15141b   page background
+ *   frame_inactive   #2d2b38   popovers / borders
+ *   toolbar          #211d26   widget surfaces
+ *   omnibox_bg       #110f18   search box
+ *   ntp_text         #edecee   text
+ *   ntp_section      #a277ff   purple (primary)
+ *   tab_text / icons #61ffca   green (active / positive)
+ * Plus the rest of the Aura palette for small accents:
+ *   orange #ffca85, pink #f694ff, blue #82e2ff, red #ff6767, gray #6d6d6d
+ */
+
+:root {
+    --aura-bg: #15141b;
+    --aura-surface: #211d26;
+    --aura-surface-alt: #2d2b38;
+    --aura-input: #110f18;
+    --aura-text: #edecee;
+    --aura-gray: #6d6d6d;
+    --aura-purple: #a277ff;
+    --aura-green: #61ffca;
+    --aura-orange: #ffca85;
+    --aura-pink: #f694ff;
+    --aura-blue: #82e2ff;
+    --aura-red: #ff6767;
+
+    /* Surfaces */
+    --color-background: var(--aura-bg);
+    --color-widget-background-hsl-values: 267, 13%, 13%;
+    --color-widget-background: var(--aura-surface);
+    --color-widget-content-border: var(--aura-surface-alt);
+    --color-widget-background-highlight: var(--aura-surface-alt);
+    --color-popover-background: var(--aura-surface);
+    --color-popover-border: var(--aura-surface-alt);
+    --color-separator: var(--aura-surface-alt);
+
+    /* Text */
+    --color-text-highlight: var(--aura-text);
+    --color-text-paragraph: #d6d4dc;
+    --color-text-base: #bdbac6;
+    --color-text-base-muted: #a19eab;
+    --color-text-subdue: var(--aura-gray);
+
+    /* Accents */
+    --color-primary: var(--aura-purple);
+    --color-positive: var(--aura-green);
+    --color-negative: var(--aura-red);
+}
+
+::selection {
+    background-color: rgba(162, 119, 255, 0.35);
+    color: var(--aura-text);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--aura-surface-alt);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--aura-purple);
+}
+
+/* Widget titles: purple, like Chrome's new-tab section headers */
+.widget-header h2,
+.widget-header h2 a {
+    color: var(--aura-purple);
+}
+
+.widget-header h2 a:hover {
+    color: var(--aura-green);
+}
+
+/* Navigation: active tab in green, like Chrome tab text */
+.nav-item.nav-item-current {
+    color: var(--aura-green);
+    border-bottom-color: var(--aura-green);
+}
+
+.nav-item:not(.nav-item-current):hover {
+    color: var(--aura-purple);
+    border-bottom-color: var(--aura-purple);
+}
+
+/* Links: off-white like Chrome's ntp_link, purple on hover, gray once visited */
+.color-primary-if-not-visited:not(:visited) {
+    color: var(--aura-text);
+}
+
+.color-primary-if-not-visited:visited {
+    color: var(--aura-gray);
+}
+
+a:hover,
+.color-primary-if-not-visited:hover {
+    color: var(--aura-purple);
+}
+
+/* Search: omnibox colors */
+.search {
+    background: var(--aura-input);
+}
+
+.search-input {
+    color: var(--aura-purple);
+}
+
+.search-input::placeholder {
+    color: var(--aura-gray);
+}
+
+.search:focus-within {
+    border-color: var(--aura-green);
+}
+
+.search-icon {
+    fill: var(--aura-green);
+}
+
+.search-bang {
+    color: var(--aura-orange);
+}
+
+/* Bookmarks: group titles in green, like toolbar icons */
+.bookmarks-group-title {
+    color: var(--aura-green);
+}
+
+/* Calendar: today highlighted in purple */
+.calendar-current-date {
+    background-color: var(--aura-purple);
+    color: var(--aura-bg);
+    font-weight: bold;
+}
+
+/* Weather: current hour bar in purple */
+.weather-column-current .weather-bar,
+.weather-column:hover .weather-bar {
+    background: var(--aura-purple);
+}

@@ -1,0 +1,27 @@
+server:
+  assets-path: /app/assets
+
+# Aura Theme — colors taken from the Aura Chrome theme manifest
+# (github.com/daltonmenezes/aura-theme/tree/main/packages/chrome)
+#   frame / background  #15141b  -> 249 15 9
+#   section / primary   #a277ff  -> 259 100 73
+#   tab text / positive #61ffca  -> 160 100 69
+#   negative            #ff6767  -> 0 100 70
+theme:
+  background-color: 249 15 9
+  primary-color: 259 100 73
+  positive-color: 160 100 69
+  negative-color: 0 100 70
+  contrast-multiplier: 1.1
+  text-saturation-multiplier: 0.4
+  # Note: assets are cached by the browser, changes to the CSS file
+  # will not be reflected until the browser cache is cleared (Ctrl+F5)
+  custom-css-file: /assets/aura.css
+  disable-picker: true
+
+branding:
+  app-name: Aura Start
+  app-background-color: "#15141b"
+
+pages:
+  - $include: home.yml

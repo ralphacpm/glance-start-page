@@ -1,0 +1,123 @@
+- name: Home
+  hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: clock
+          hour-format: 12h
+          timezones:
+            - timezone: Asia/Tokyo
+              label: Tokyo
+            - timezone: America/New_York
+              label: New York
+            - timezone: Europe/London
+              label: London
+
+        - type: calendar
+          first-day-of-week: sunday
+
+        - type: weather
+          location: Manila, Philippines
+          units: metric
+          hour-format: 12h
+
+        - type: markets
+          markets:
+            - symbol: PSEI.PS
+              name: PSEi
+            - symbol: PHP=X
+              name: USD/PHP
+            - symbol: SPY
+              name: S&P 500
+            - symbol: BTC-USD
+              name: Bitcoin
+            - symbol: NVDA
+              name: NVIDIA
+
+    - size: full
+      widgets:
+        - type: search
+          search-engine: google
+          autofocus: true
+          bangs:
+            - title: YouTube
+              shortcut: "!yt"
+              url: https://www.youtube.com/results?search_query={QUERY}
+            - title: GitHub
+              shortcut: "!gh"
+              url: https://github.com/search?q={QUERY}
+
+        - type: bookmarks
+          groups:
+            - title: General
+              links:
+                - title: Gmail
+                  url: https://mail.google.com/mail/u/0/
+                - title: Calendar
+                  url: https://calendar.google.com/
+                - title: Drive
+                  url: https://drive.google.com/
+                - title: Claude
+                  url: https://claude.ai/
+            - title: Dev
+              links:
+                - title: GitHub
+                  url: https://github.com/
+                - title: Vercel
+                  url: https://vercel.com/dashboard
+                - title: Fly.io
+                  url: https://fly.io/dashboard
+            - title: Entertainment
+              links:
+                - title: YouTube
+                  url: https://www.youtube.com/
+                - title: Reddit
+                  url: https://www.reddit.com/
+
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
+        - type: videos
+          channels:
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCBJycsmduvYEL83R_U4JriQ # Marques Brownlee
+            - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: Philippines
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: rss
+          title: Reading
+          limit: 10
+          collapse-after: 4
+          cache: 12h
+          feeds:
+            - url: https://www.rappler.com/feed/
+              title: Rappler
+            - url: https://www.theverge.com/rss/index.xml
+              title: The Verge
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://www.joshwcomeau.com/rss.xml
+              title: Josh Comeau
+
+        - type: releases
+          cache: 1d
+          # Unauthenticated GitHub API allows 60 requests/hour. To raise it, set a
+          # GITHUB_TOKEN secret and uncomment the next line.
+          # token: ${GITHUB_TOKEN}
+          repositories:
+            - glanceapp/glance
+            - daltonmenezes/aura-theme
+            - vercel/next.js
