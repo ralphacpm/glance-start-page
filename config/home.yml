@@ -86,15 +86,6 @@
             - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
             - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
 
-        - type: group
-          widgets:
-            - type: reddit
-              subreddit: technology
-              show-thumbnails: true
-            - type: reddit
-              subreddit: Philippines
-              show-thumbnails: true
-
     - size: small
       widgets:
         - type: rss

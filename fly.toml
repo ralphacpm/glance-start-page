@@ -1,5 +1,5 @@
 # Fly.io config. Change `app` to a globally unique name before the first deploy.
-app = "aura-glance"
+app = "my-start-page-vivid-tide-1685"
 primary_region = "sin"   # Singapore, closest region to Manila
 
 [build]
