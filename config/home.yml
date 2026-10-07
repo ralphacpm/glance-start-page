@@ -85,14 +85,6 @@
                   url: https://vercel.com/dashboard
                 - title: Fly.io
                   url: https://fly.io/dashboard
-            - title: News & Reading
-              links:
-                - title: Hacker News
-                  url: https://news.ycombinator.com/
-                - title: Rappler
-                  url: https://www.rappler.com/
-                - title: The Verge
-                  url: https://www.theverge.com/
             - title: Entertainment
               links:
                 - title: Netflix
