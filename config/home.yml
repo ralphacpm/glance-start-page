@@ -73,6 +73,8 @@
                   url: https://chatgpt.com/
                 - title: Gemini
                   url: https://gemini.google.com/
+                - title: Kiro
+                  url: https://kiro.dev/
             - title: Dev
               links:
                 - title: GitHub
@@ -113,16 +115,10 @@
                   url: https://learn.cantrill.io/
                 - title: freeCodeCamp
                   url: https://www.freecodecamp.org/
-                - title: Khan Academy
-                  url: https://www.khanacademy.org/
-                - title: Wikipedia
-                  url: https://www.wikipedia.org/
             - title: Tools
               links:
                 - title: Canva
                   url: https://www.canva.com/
-                - title: Figma
-                  url: https://www.figma.com/
                 - title: TinyPNG
                   url: https://tinypng.com/
                 - title: Sejda PDF
@@ -133,6 +129,8 @@
                   url: https://cloudconvert.com/
                 - title: Excalidraw
                   url: https://excalidraw.com/
+                - title: FMHY
+                  url: https://fmhy.net/
 
         - type: group
           widgets:
