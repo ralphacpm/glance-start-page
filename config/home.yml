@@ -114,9 +114,8 @@
 
         - type: releases
           cache: 1d
-          # Unauthenticated GitHub API allows 60 requests/hour. To raise it, set a
-          # GITHUB_TOKEN secret and uncomment the next line.
-          # token: ${GITHUB_TOKEN}
+          # Unauthenticated GitHub API allows 60 requests/hour. To raise it, add a
+          # `token:` line here (see the README for how to supply it as a Fly secret).
           repositories:
             - glanceapp/glance
             - daltonmenezes/aura-theme

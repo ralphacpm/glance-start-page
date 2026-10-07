@@ -59,4 +59,4 @@ docker compose up -d
   Browsers cache the CSS, so press Ctrl+F5 after changing it.
 - **Upgrading Glance**: change the tag in `Dockerfile` (and `docker-compose.yml`) and redeploy.
 - **GitHub releases widget**: unauthenticated requests are limited to 60/hour. To raise the limit,
-  run `fly secrets set GITHUB_TOKEN=...` and uncomment `token: ${GITHUB_TOKEN}` in `config/home.yml`.
+  run `fly secrets set GITHUB_TOKEN=...` and add a `token:` line to the releases widget in `config/home.yml` that references it with a dollar sign and braces around `GITHUB_TOKEN`. Only add that line after the secret is set, because Glance refuses to start when a referenced variable is missing.
