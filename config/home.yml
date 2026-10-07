@@ -49,7 +49,7 @@
 
         - type: bookmarks
           groups:
-            - title: General
+            - title: Daily
               links:
                 - title: Gmail
                   url: https://mail.google.com/mail/u/0/
@@ -57,8 +57,22 @@
                   url: https://calendar.google.com/
                 - title: Drive
                   url: https://drive.google.com/
+                - title: Facebook
+                  url: https://www.facebook.com/
+                - title: Messenger
+                  url: https://www.messenger.com/
+                - title: Reddit
+                  url: https://www.reddit.com/
+                - title: YouTube
+                  url: https://www.youtube.com/
+            - title: AI
+              links:
                 - title: Claude
                   url: https://claude.ai/
+                - title: ChatGPT
+                  url: https://chatgpt.com/
+                - title: Gemini
+                  url: https://gemini.google.com/
             - title: Dev
               links:
                 - title: GitHub
@@ -67,12 +81,58 @@
                   url: https://vercel.com/dashboard
                 - title: Fly.io
                   url: https://fly.io/dashboard
+            - title: News & Reading
+              links:
+                - title: Hacker News
+                  url: https://news.ycombinator.com/
+                - title: Rappler
+                  url: https://www.rappler.com/
+                - title: The Verge
+                  url: https://www.theverge.com/
             - title: Entertainment
               links:
-                - title: YouTube
-                  url: https://www.youtube.com/
-                - title: Reddit
-                  url: https://www.reddit.com/
+                - title: Netflix
+                  url: https://www.netflix.com/
+                - title: Spotify
+                  url: https://open.spotify.com/
+                - title: Movy
+                  url: https://movy.sx/
+                - title: Rivestream
+                  url: https://rivestream.app/
+                - title: Weeb Central
+                  url: https://weebcentral.com/
+                - title: HiveToons
+                  url: https://hivetoons.org/
+            - title: Learning
+              links:
+                - title: Udemy
+                  url: https://www.udemy.com/
+                - title: Tutorials Dojo
+                  url: https://portal.tutorialsdojo.com/
+                - title: Cantrill
+                  url: https://learn.cantrill.io/
+                - title: freeCodeCamp
+                  url: https://www.freecodecamp.org/
+                - title: Khan Academy
+                  url: https://www.khanacademy.org/
+                - title: Wikipedia
+                  url: https://www.wikipedia.org/
+            - title: Tools
+              links:
+                - title: Canva
+                  url: https://www.canva.com/
+                - title: Figma
+                  url: https://www.figma.com/
+                - title: TinyPNG
+                  url: https://tinypng.com/
+                - title: Sejda PDF
+                  url: https://www.sejda.com/
+                - title: Photopea
+                  url: https://www.photopea.com/
+                - title: CloudConvert
+                  url: https://cloudconvert.com/
+                - title: Excalidraw
+                  url: https://excalidraw.com/
 
         - type: group
           widgets:
