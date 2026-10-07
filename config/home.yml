@@ -65,6 +65,8 @@
                   url: https://www.reddit.com/
                 - title: YouTube
                   url: https://www.youtube.com/
+                - title: LinkedIn
+                  url: https://www.linkedin.com/
             - title: AI
               links:
                 - title: Claude
