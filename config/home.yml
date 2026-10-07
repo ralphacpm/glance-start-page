@@ -133,6 +133,8 @@
                   url: https://excalidraw.com/
                 - title: FMHY
                   url: https://fmhy.net/
+                - title: Remove.bg
+                  url: https://www.remove.bg/
 
         - type: group
           widgets:
